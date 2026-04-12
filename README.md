@@ -15,3 +15,7 @@ Clone the repository and start exploring!
 - Cloud-based automation testing
 - Agent workflow validation
 - Continuous integration support
+
+## Contributing
+
+We welcome contributions! Please feel free to submit issues and pull requests.
