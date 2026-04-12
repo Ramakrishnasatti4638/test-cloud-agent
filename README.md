@@ -9,3 +9,9 @@ This repository is used to test and validate cloud-based agent workflows and aut
 ## Getting Started
 
 Clone the repository and start exploring!
+
+## Features
+
+- Cloud-based automation testing
+- Agent workflow validation
+- Continuous integration support
