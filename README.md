@@ -1,6 +1,6 @@
-# test-cloud-agent
+# test-cloud-agent ☁️
 
-A test repository for cloud agent functionality with Temporal workflow integration.
+A test repository for cloud agent functionality with Temporal workflow integration. This project demonstrates modern async workflow patterns.
 
 ## Overview
 
@@ -68,5 +68,19 @@ We welcome contributions! Please feel free to submit issues and pull requests.
 
 MIT
 
+## Additional Resources
+
+For more information about Temporal workflows, visit the [Temporal documentation](https://docs.temporal.io).
+
 ---
 *Test branch update: Small change made for testing purposes.*
+
+**Rama branch**: This change was made on the rama branch to test branch creation and modifications.
+
+**Latest update**: Small change applied to test the cloud agent workflow - 2025 edition.
+
+**New update**: Testing small change functionality - January 2025.
+
+**Agent update**: Small change applied via cloud agent - automated test run.
+
+**2025 Test**: Small change verification - cloud agent test execution.
