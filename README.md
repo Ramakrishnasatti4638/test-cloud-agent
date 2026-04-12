@@ -67,3 +67,6 @@ We welcome contributions! Please feel free to submit issues and pull requests.
 ## License
 
 MIT
+
+---
+*Test branch update: Small change made for testing purposes.*
