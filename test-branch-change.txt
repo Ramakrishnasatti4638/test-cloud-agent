@@ -1,0 +1,7 @@
+This file was created on the "test-1" branch.
+
+Branch: test-1
+Purpose: Demonstrate branch creation and file changes
+Date: 2025-01-XX
+
+This is a test change made to demonstrate Git branching functionality.
