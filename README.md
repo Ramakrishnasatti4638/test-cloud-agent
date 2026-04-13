@@ -74,3 +74,7 @@ MIT
 ## Check 1 Update
 
 This is a small change made on the "check-1" branch for testing purposes.
+
+## Check 2 Update
+
+This is a small change made on the "check-2" branch for testing purposes.
