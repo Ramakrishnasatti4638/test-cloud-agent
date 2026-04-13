@@ -117,4 +117,6 @@ For more information about Temporal workflows, visit the [Temporal documentation
 
 **Quick Test Update**: Small change to demonstrate cloud agent functionality - testing automated PR creation.
 
+**Check Branch Update**: Small change made on the check branch - verifying branch workflow and automated PR creation.
+
 // HITL Test
