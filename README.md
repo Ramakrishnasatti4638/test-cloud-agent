@@ -1,4 +1,5 @@
 # test-cloud-agent
+// HITL Test
 
 A test repository for cloud agent functionality with Temporal workflow integration.
 
