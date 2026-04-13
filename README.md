@@ -80,3 +80,7 @@ This is a small change made on the "check-1" branch for testing purposes.
 
 This is a small change made on the "check-2" branch for testing purposes.  
 **Branch: check-4 - Small change added** 
+  
+## Ram 1 Update  
+  
+This is a change made on the "ram-1" branch for testing purposes. 
