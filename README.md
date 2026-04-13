@@ -70,3 +70,7 @@ MIT
 
 ---
 *Test branch update: Small change made for testing purposes.*
+
+## Check 1 Update
+
+This is a small change made on the "check-1" branch for testing purposes.
