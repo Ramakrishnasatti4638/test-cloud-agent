@@ -21,3 +21,5 @@ Test change: This line was added as a small uncommitted modification.
 Checkpoint branch update: Making changes across multiple files for testing purposes.
 
 Checkpoint update: Modified for checkpoint branch PR testing.
+
+Three-file edit test: example.txt updated as the third file in this batch.
