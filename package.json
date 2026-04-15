@@ -1,7 +1,7 @@
 {
   "name": "test-cloud-agent-hitl",
   "version": "1.0.0",
-  "description": "Test HITL interrupt workflow with Temporal - checkpoint testing",
+  "description": "Test HITL interrupt workflow with Temporal - checkpoint multi-file update",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
