@@ -1,0 +1,5 @@
+Checkpoint Test
+===============
+
+This is a simple test file created for the checkpoint branch.
+Timestamp: 2025
