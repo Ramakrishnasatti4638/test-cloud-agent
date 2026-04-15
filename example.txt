@@ -18,4 +18,6 @@ Small change made: Testing file modification without committing - demo update.
 
 Test change: This line was added as a small uncommitted modification.
 
+Checkpoint branch update: Making changes across multiple files for testing purposes.
+
 Checkpoint update: Modified for checkpoint branch PR testing.
