@@ -17,3 +17,5 @@ Additional line: This is a small uncommitted change for testing purposes.
 Small change made: Testing file modification without committing - demo update.
 
 Test change: This line was added as a small uncommitted modification.
+
+Checkpoint update: Modified for checkpoint branch PR testing.
