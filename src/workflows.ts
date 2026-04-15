@@ -7,17 +7,13 @@ import {
 } from '@temporalio/workflow';
 import type * as activities from './activities';
 
-const {
-  executeAgentTurn,
-  registerHitlInterruptAsync,
-  processApprovedTurn,
-  processRejectedTurn,
-} = proxyActivities<typeof activities>({
-  startToCloseTimeout: '1 minute',
-  retry: {
-    maximumAttempts: 3,
-  },
-});
+const { executeAgentTurn, registerHitlInterruptAsync, processApprovedTurn, processRejectedTurn } =
+  proxyActivities<typeof activities>({
+    startToCloseTimeout: '1 minute',
+    retry: {
+      maximumAttempts: 3,
+    },
+  });
 
 export interface HitlDecision {
   approved: boolean;
@@ -42,7 +38,7 @@ export const hitlDecisionSignal = defineSignal<[HitlDecision]>('hitl-decision');
 
 export async function agentWorkflow(input: WorkflowInput): Promise<WorkflowResult> {
   console.log(`[Workflow] Starting agent workflow for run: ${input.runId}`);
-  
+
   const results: string[] = [];
   let hitlInterrupted = false;
   let hitlDecision: HitlDecision | undefined;
@@ -71,10 +67,7 @@ export async function agentWorkflow(input: WorkflowInput): Promise<WorkflowResul
 
       results.push(result.response);
     } catch (error) {
-      if (
-        error instanceof Error &&
-        error.message.includes('Agent interrupted')
-      ) {
+      if (error instanceof Error && error.message.includes('Agent interrupted')) {
         console.log(`[Workflow] Caught AgentInterruptedError, calling RegisterHitlInterruptAsync`);
         hitlInterrupted = true;
 
@@ -90,7 +83,7 @@ export async function agentWorkflow(input: WorkflowInput): Promise<WorkflowResul
         await condition(() => hitlDecisionReceived, '5 minutes');
 
         console.log(`[Workflow] hitl-decision received, processing decision`);
-        
+
         if (!hitlDecision) {
           throw ApplicationFailure.create({
             message: 'HITL decision timeout or missing',
@@ -114,7 +107,7 @@ export async function agentWorkflow(input: WorkflowInput): Promise<WorkflowResul
   }
 
   console.log(`[Workflow] Workflow completed for run: ${input.runId}`);
-  
+
   return {
     runId: input.runId,
     results,

@@ -33,11 +33,7 @@ async function runDemo() {
 
     const input: WorkflowInput = {
       runId,
-      prompts: [
-        'Analyze user data',
-        'Perform risky operation',
-        'Generate report',
-      ],
+      prompts: ['Analyze user data', 'Perform risky operation', 'Generate report'],
       shouldInterruptOnTurn: 2,
       interruptReason: 'Risky operation requires human approval',
     };

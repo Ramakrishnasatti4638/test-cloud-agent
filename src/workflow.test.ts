@@ -33,7 +33,7 @@ describe('HITL Interrupt Workflow', () => {
   beforeEach(async () => {
     platformAPI.reset();
     client = testEnv.client;
-    
+
     worker = await Worker.create({
       connection: testEnv.nativeConnection,
       taskQueue: 'test-queue',
@@ -68,7 +68,7 @@ describe('HITL Interrupt Workflow', () => {
 
       await worker.runUntil(async () => {
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        
+
         expect(registerSpy).toHaveBeenCalledWith(
           expect.objectContaining({
             runId,
@@ -78,7 +78,7 @@ describe('HITL Interrupt Workflow', () => {
         );
 
         await handle.signal(hitlDecisionSignal, { approved: true });
-        
+
         const result = await handle.result();
         expect(result.hitlInterrupted).toBe(true);
       });
@@ -147,7 +147,7 @@ describe('HITL Interrupt Workflow', () => {
 
         await handle.signal(hitlDecisionSignal, { approved: true });
         const result = await handle.result();
-        
+
         expect(result.hitlInterrupted).toBe(true);
         expect(result.hitlDecision).toEqual({ approved: true });
       });

@@ -30,14 +30,12 @@ export function validateAgentTurnInput(input: AgentTurnInput): void {
 export async function executeAgentTurn(input: AgentTurnInput): Promise<AgentTurnOutput> {
   validateAgentTurnInput(input);
   console.log(`[Activity] Executing agent turn: ${input.turnId}`);
-  
+
   if (input.shouldInterrupt) {
     console.log(`[Activity] Throwing AgentInterruptedError for turn: ${input.turnId}`);
-    throw new AgentInterruptedError(
-      input.interruptReason || 'Manual interrupt',
-      input.turnId,
-      { runId: input.runId }
-    );
+    throw new AgentInterruptedError(input.interruptReason || 'Manual interrupt', input.turnId, {
+      runId: input.runId,
+    });
   }
 
   return {
