@@ -134,3 +134,5 @@ For more information about Temporal workflows, visit the [Temporal documentation
 **Checkpoint Update**: Additional changes on checkpoint branch - testing multi-file commits.
 
 **New Checkpoint PR**: Small change on checkpoint branch - creating PR with approval workflow.
+
+**Single Change Test**: Simple one-line update to checkpoint branch - testing minimal change workflow.
