@@ -4,7 +4,7 @@
 // HITL Test
 // HITL Test
 # test-cloud-agent ☁️
-> Branch: demo/check - Multi-file Changes Demo
+> Branch: redkk - Small changes demo
 
 A test repository for cloud agent functionality with Temporal workflow integration. This project demonstrates modern async workflow patterns.
 
