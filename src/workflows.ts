@@ -36,6 +36,10 @@ export interface WorkflowResult {
 
 export const hitlDecisionSignal = defineSignal<[HitlDecision]>('hitl-decision');
 
+/**
+ * Main agent workflow with HITL interrupt support
+ * Enhanced on demo/check branch
+ */
 export async function agentWorkflow(input: WorkflowInput): Promise<WorkflowResult> {
   console.log(`[Workflow] Starting agent workflow for run: ${input.runId}`);
 
