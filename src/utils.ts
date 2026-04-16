@@ -1,5 +1,6 @@
 /**
  * Utility functions for workflow statistics and analysis
+ * Updated for demo/check branch
  */
 
 export interface WorkflowStats {
@@ -43,4 +44,13 @@ export function formatDuration(ms: number): string {
 
 export function summarizeWorkflowExecution(stats: WorkflowStats): string {
   return `Execution Summary: ${stats.completedTurns}/${stats.totalTurns} turns completed in ${formatDuration(stats.executionTimeMs)} (avg: ${formatDuration(stats.averageTurnTimeMs)}/turn)`;
+}
+
+/**
+ * Calculate success rate of workflow execution
+ * Added on demo/check branch
+ */
+export function calculateSuccessRate(stats: WorkflowStats): number {
+  if (stats.totalTurns === 0) return 0;
+  return (stats.completedTurns / stats.totalTurns) * 100;
 }
