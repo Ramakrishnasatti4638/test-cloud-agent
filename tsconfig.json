@@ -16,5 +16,6 @@
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.test.ts"],
-  "// checkpoint": "Updated checkpoint branch - testing PR workflow v2"
+  "// checkpoint": "Updated checkpoint branch - testing PR workflow v2",
+  "// demo-check": "Modified on demo/check branch - testing sequential file edits"
 }
