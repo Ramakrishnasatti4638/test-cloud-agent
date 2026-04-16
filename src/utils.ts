@@ -49,8 +49,17 @@ export function summarizeWorkflowExecution(stats: WorkflowStats): string {
 /**
  * Calculate success rate of workflow execution
  * Added on demo/check branch
+ * Updated: Part of 5-file batch modification test
  */
 export function calculateSuccessRate(stats: WorkflowStats): number {
   if (stats.totalTurns === 0) return 0;
   return (stats.completedTurns / stats.totalTurns) * 100;
+}
+
+/**
+ * Validate workflow statistics for consistency
+ * Added during demo/check batch update
+ */
+export function validateStats(stats: WorkflowStats): boolean {
+  return stats.totalTurns >= stats.completedTurns + stats.interruptedTurns;
 }

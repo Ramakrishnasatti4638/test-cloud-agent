@@ -25,3 +25,5 @@ Checkpoint update: Modified for checkpoint branch PR testing.
 Three-file edit test: example.txt updated as the third file in this batch.
 
 Checkpoint branch test: Single small change for PR demonstration - 2025.
+
+Demo/check branch update: Modified as part of 5-file batch change - testing coordinated updates.

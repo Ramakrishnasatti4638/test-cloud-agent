@@ -1,7 +1,7 @@
 {
   "name": "test-cloud-agent-hitl",
   "version": "1.0.0",
-  "description": "Test HITL interrupt workflow with Temporal - demo/check branch with multi-file changes",
+  "description": "Test HITL interrupt workflow with Temporal - demo/check branch update (5 files modified)",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
