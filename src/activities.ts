@@ -50,6 +50,10 @@ export async function registerHitlInterruptAsync(interrupt: HitlInterrupt): Prom
   await platformAPI.registerHitlInterrupt(interrupt);
 }
 
+/**
+ * Process an approved HITL turn
+ * Updated on demo/check branch
+ */
 export async function processApprovedTurn(runId: string, turnId: string): Promise<string> {
   console.log(`[Activity] Processing approved turn: ${turnId} for run: ${runId}`);
   return `Turn ${turnId} approved and processed`;
