@@ -6,7 +6,7 @@
 # test-cloud-agent ☁️
 > Branch: changes-for-testing
 
-A test repository for cloud agent functionality with Temporal workflow integration. This project demonstrates modern async workflow patterns.
+A test repository for cloud agent functionality with Temporal workflow integration. This project demonstrates modern async workflow patterns and agent run workflows.
 
 ## Overview
 
