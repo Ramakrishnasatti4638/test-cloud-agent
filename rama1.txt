@@ -1,0 +1,8 @@
+Hello! This is a sample text file created for you.
+
+Here's some content:
+- Line 1: Welcome to rama1.txt
+- Line 2: This file was created successfully
+- Line 3: Feel free to modify this content as needed
+
+Have a great day!
